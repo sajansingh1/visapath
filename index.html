@@ -261,6 +261,7 @@ body{
   </div>
 
   <!-- RIGHT -->
+
   <div class="stats-card">
     <div class="stat-box">
       <small>Processing Time</small>
@@ -529,12 +530,9 @@ body{
           Complete guidance for international students pursuing education in the US—documentation, I‑20 processes, and interview preparation.
         </p>
         <div class="card-foot">
-          <span class="price" aria-label="Price not listed">Custom plan</span>
-          <button class="cta" type="button">Learn more</button>
-        </div>
+          </div>
       </article>
-
-      <!-- B1/B2 Visa -->
+       <!-- B1/B2 Visa -->
       <article class="card" role="listitem" aria-label="B1/B2 Visa">
         <div class="card-head">
           <div class="icon" aria-hidden="true">
@@ -551,8 +549,7 @@ body{
           Short-term travel to the United States for business meetings, conferences, tourism, or family visits—with complete application guidance and documentation support.
         </p>
         <div class="card-foot">
-          <span class="price" aria-label="Price"></span>
-          <button class="cta" type="button">Get started</button>
+        
         </div>
       </article>
 
@@ -572,8 +569,11 @@ body{
           Boost your confidence with expert-led mock interviews, real consular questions, and personalized feedback to help you answer clearly and convincingly.
         </p>
         <div class="card-foot">
-          <span class="price" aria-label="Price"></span>
-          <button class="cta" type="button">Book a session</button>
+          
+ <a href="https://your-booking-link.com" style="text-decoration:none;">
+         <button class="book-btn">Book a session</button>
+          </a>
+          
         </div>
       </article>
     </div>
@@ -595,8 +595,6 @@ body{
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-/* ===== YOUR EXISTING CSS ===== */
-/* keep ALL your navbar, hero, services CSS here */
 
 /* ===== OUR PROCESS CSS ===== */
 .process-section.dark {
@@ -843,7 +841,7 @@ body{
     const message = queryForm.message.value.trim();
 
     // Open WhatsApp with pre-filled message
-    const phone = '8685004647';
+    const phone = '+49 1573362551';
     const text = `Hello, my name is ${name}. Email: ${email}. Message: ${message}`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
