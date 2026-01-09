@@ -233,7 +233,7 @@ body{
   <div class="nav-links">
     <a href="#">Services</a>
     <a href="#">Process</a>
-    <a href="#" class="contact-btn">Contact</a>
+    
   </div>
 </nav>
 
@@ -253,7 +253,6 @@ body{
       <button class="primary-btn">Get Started →</button>
       <button class="secondary-btn">Explore Services</button>
     </div>
-
     <ul class="checklist">
       <li><span>✔</span> 5+ years of visa consulting experience</li>
       <li><span>✔</span> 500+ successful visa approvals</li>
@@ -570,10 +569,32 @@ body{
         </p>
         <div class="card-foot">
           
- <a href="https://your-booking-link.com" style="text-decoration:none;">
-         <button class="book-btn">Book a session</button>
-          </a>
-          
+ <button onclick="bookSession()" class="book-btn">
+  Book a Session
+</button>
+
+<script>
+function bookSession() {
+  const phone = "917015090481"; // 🔴 Replace with your WhatsApp number
+
+  const message = `
+Hi, I want to book a session.
+
+My name is: [Your Name]
+I am from: [Your City / Country]
+I need interview preparation.
+
+Thank you.
+  `;
+
+  window.open(
+    `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+    "_blank"
+  );
+}
+</script>
+
+
         </div>
       </article>
     </div>
